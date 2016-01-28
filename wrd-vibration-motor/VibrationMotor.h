@@ -18,7 +18,11 @@
 #ifndef __WRD_VIBRATION_MOTOR_H__
 #define __WRD_VIBRATION_MOTOR_H__
 
+// include local PwmOut - this overwrites the one in mbed-drivers
+#include "PwmOut.h"
 #include "mbed-drivers/mbed.h"
+
+#warning using custom PwmOut
 
 #include <queue>
 
