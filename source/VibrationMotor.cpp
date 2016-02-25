@@ -112,11 +112,11 @@ void VibrationMotor::processQueue(void)
             {
                 /* set pin and period */
                 pwm = new PwmOut(pin);
-                pwm->period_us(PULSE_WIDTH_UNIT * 100);
+                pwm->period((float) PULSE_WIDTH_UNIT / 1000000.0);
             }
 
             /* set intensity based on duty-cycle */
-            pwm->pulsewidth_us(action.dutyCycle * PULSE_WIDTH_UNIT);
+            pwm->write((float) action.dutyCycle / 100.0);
         }
         else
         {

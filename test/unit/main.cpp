@@ -24,16 +24,18 @@ static VibrationMotor vibra;
 #error Platform not supported
 #endif
 
+PwmOut out(PA10);
+
 void app_start(int, char *[])
 {
-    vibra.dutyCycle(70)
-         .on(200).pause(100)
-         .on(200).pause(100)
-         .on(200).pause(100)
-         .on(100).pause(100)
-         .on(100).pause(100)
-         .on(100).pause(100)
-         .on(200).pause(100)
-         .on(200).pause(100)
-         .on(200);
+   vibra.dutyCycle(70)
+      .on(200).pause(100)
+      .on(200).pause(100)
+      .on(200).pause(100)
+      .on(100).pause(100)
+      .on(100).pause(100)
+      .on(100).pause(100)
+      .on(200).pause(100)
+      .on(200).pause(100)
+      .on(200);
 }
