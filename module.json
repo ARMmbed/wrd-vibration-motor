@@ -1,6 +1,6 @@
 {
   "name": "wrd-vibration-motor",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Wearable Reference Design vibration motor API.",
   "keywords": [],
   "author": "Marcus Chang <marcus.chang@arm.com>",
