@@ -17,7 +17,7 @@
 
 #include "mbed-drivers/mbed.h"
 
-#if YOTTA_CFG_HARDWARE_WEARABLE_REFERENCE_DESIGN_VIBRATION_MOTOR_PRESENT
+#if YOTTA_CFG_HARDWARE_WRD_VIBRATION_MOTOR_PRESENT
 #include "wrd-vibration-motor/VibrationMotor.h"
 static VibrationMotor vibra;
 #else
